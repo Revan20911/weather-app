@@ -1,0 +1,113 @@
+
+
+:root{
+
+    --weather-icon: none;
+
+}
+
+
+*,
+*::after, 
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    
+    display: block;
+    background-color: rgba(150, 177, 201, 0.726);
+
+    font-family: sans-serif;
+
+}
+
+main{
+    width: 100%;
+    height: calc(v);
+}
+
+
+header{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: fit-content;
+    background-color: rgba(48, 47, 47, 0.644);
+    padding:10px;
+}
+
+
+#search{
+
+    width: 35%;
+    background-color: whitesmoke;
+
+    height: 60px;
+    border-style: none;
+    border-radius: 0.5em;
+    font-size: 30px;
+    color:rgb(190, 182, 182);
+    cursor: pointer;
+    
+
+
+
+}
+
+#search:hover{
+
+    animation: hover 0.3s forwards;
+
+    
+}
+
+#search:focus{
+
+    color:black;
+
+}
+
+.fa-magnifying-glass{
+
+    color:whitesmoke;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#weather-view{
+
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+
+    height: 30%;
+    width: 50%;
+}
+
+.fa-sun{
+
+    animation: spin 1s linear infinite
+}
+
+
+@keyframes hover {
+
+    from {color:rgb(190, 182, 182);} to {color:black;}
+
+
+}
+
+@keyframes spin {
+
+    100% {transform: rotate(360deg)}
+        
+    
+    
+}
