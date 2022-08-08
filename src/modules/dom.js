@@ -7,15 +7,15 @@ export const displayResults = (() => {
 
         if(forecast.weather[0].main === 'Clear'){
 
-            icon = '<i class="fa-solid fa-sun"></i>';
+            icon = "./dist/assets/svg/day.svg";
 
         }else if(forecast.weather[0].main === 'Rain'){
 
-            icon = '<i class="fa-solid fa-cloud-rain"></i>';
+            icon = "./dist/assets/svg/rainy-6.svg";
         }
         else if(forecast.weather[0].main === 'Clouds'){
 
-            icon = '<i class="fa-solid fa-cloud"></i>';
+            icon = "./dist/assets/svg/cloudy-day-1.svg";
         }
 
         return icon;
@@ -50,7 +50,7 @@ export const displayResults = (() => {
 
         name.textContent = `${forecast.name}`;
         temp.textContent = `${forecast.main.temp} °`;
-        icon.innerHTML = getWeatherIcon(forecast);
+        icon.src = getWeatherIcon(forecast);
 
        
 

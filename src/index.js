@@ -1,4 +1,4 @@
-import { getQuery } from "./modules/search";
+
 import { getWeather } from "./modules/weather";
 import { displayResults } from "./modules/dom";
 

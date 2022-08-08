@@ -5,8 +5,6 @@ export const getWeather = (() => {
 
     function requestCoordinates(location){
 
-        
-
         return `http://api.openweathermap.org/geo/1.0/direct?q=${location}&appid=${apiKey}`;
     }
 
