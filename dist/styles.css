@@ -4,6 +4,9 @@
 
     --weather-icon: none;
 
+    --primary-light: #eeeee4;
+    --primary-dark: #154c79;
+
 }
 
 
@@ -19,7 +22,7 @@ body{
 
     
     display: block;
-    background-color: rgba(150, 177, 201, 0.726);
+    background-image: url('https://images.unsplash.com/photo-1596211730558-6b536e4f1efe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80');
 
     font-family: sans-serif;
 
@@ -40,6 +43,15 @@ header{
     height: fit-content;
     background-color: rgba(48, 47, 47, 0.644);
     padding:10px;
+}
+
+h3{
+    font-size: 50px;
+}
+
+#temp{
+
+    font-size: 35px;
 }
 
 
@@ -87,14 +99,26 @@ header{
     margin: 0 auto;
     padding: 20px;
 
-    height: 30%;
-    width: 50%;
+    color: var(--primary-light);
+
+    height: 500px;
+    width: 500px;
+
 }
 
-.fa-sun{
+#icon{
 
-    animation: spin 1s linear infinite
+    
+    margin: auto;
+    height: inherit;
+    width: inherit;
+    
+
+
+
+    
 }
+
 
 
 @keyframes hover {

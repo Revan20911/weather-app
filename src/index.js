@@ -8,8 +8,6 @@ const searchForm = document.querySelector('#search');
 searchButton.addEventListener('click', search);
 
 
-
-
 async function search(){
     
     const location = searchForm.value;
@@ -19,7 +17,5 @@ async function search(){
     const weatherData = await getWeather.getForecast(forecastUrl);
     
     displayResults.generateDom(weatherData);
-
-
 }
 
