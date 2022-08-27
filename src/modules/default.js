@@ -1,7 +1,6 @@
+const defaultResults = (() => {
 
-export const displayResults = (() => {
-
-    function getWeatherIcon(forecast){
+    function getWeatherIcon(){
 
         let icon = '';
 
@@ -40,9 +39,18 @@ export const displayResults = (() => {
         const humidity = document.querySelector('#humidity');
         const rain = document.querySelector('#rain');
 
+
+
+
         name.textContent = `${forecast.name}`;
         temp.textContent = `${forecast.main.temp} °`;
         icon.src = getWeatherIcon(forecast);
+
+       
+
+        
+
+
     }
 
     return{
@@ -50,5 +58,4 @@ export const displayResults = (() => {
     };
 
 })();
-
 

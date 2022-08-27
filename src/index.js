@@ -11,8 +11,9 @@ searchButton.addEventListener('click', search);
 
 
 async function search(){
-    
+
     const location = searchForm.value;
+    
     const coordinatesUrl = getWeather.requestCoordinates(location);
     const coordinates = await getWeather.getCoordinates(coordinatesUrl);
     const forecastUrl = getWeather.requestWeatherFromCoord(coordinates);
